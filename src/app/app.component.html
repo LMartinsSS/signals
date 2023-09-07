@@ -1,0 +1,6 @@
+<p>Search string</p>
+<input type="text" (input)="setSearchString($event)">
+<ul>
+  <li *ngFor="let user of filteredUsers()">{{ user.name }}</li>
+</ul>
+<button (click)="addUser()">Add Random User</button>
